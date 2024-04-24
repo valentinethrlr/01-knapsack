@@ -17,13 +17,7 @@ class KnapsackInstance:
         C: int = 0
         
         # add code here to load instances
-        with open(filepath, 'r') as instance_file:
-            n, C = [int(x) for x in instance_file.readline().split(' ')]
-            
-            for _ in range(n):
-                w, v = [int(x) for x in instance_file.readline().split(' ')]
-                W.append(w)
-                V.append(v)
+        ...
         
         return KnapsackInstance(W, V, C)
 
