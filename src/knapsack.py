@@ -36,7 +36,7 @@ class KnapsackSolver:
     
     def __init__(self, instance):
         self._inst = instance
-        # 0-1 decision variables
+        # 0-1 decision variables (pas pris ou pris)
         self._X: list[int] = [0] * self.instance.size
 
     def solve(self):
