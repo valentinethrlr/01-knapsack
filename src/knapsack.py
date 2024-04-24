@@ -41,13 +41,14 @@ class KnapsackSolver:
     '''
     
     def __init__(self, instance):
-        self.instance = instance
+        self._inst = instance
         # 0-1 decision variables
         self._X: list[int] = [0] * self.instance.size
 
     def solve(self):
         '''
-        
+        Solves the loaded instance and returns the assignment to the decision
+        variables
         '''
         ...
         
