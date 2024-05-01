@@ -24,14 +24,14 @@ class KnapsackInstance:
         V: list[int] = []
         C: int = 0
         
-        with open("example.txt", "r") as file_objet
-        lines = file_objet.readlines()
+        lines = [x.strip() for x in string.split('\n') if x != ""]
         
-        n, C = lines[0]
+        n, C = [int(x) for x in lines[0].split(" ")]
         
-        for i in range(1, n):
-            W.append(lines[i])
-            V.append(lines[i])
+        for line in lines[1:]:
+            w, v = [int(x) for x in line.split(" ")]
+            W.append(w)
+            V.append(v)
         
         return KnapsackInstance(W, V, C)
 
