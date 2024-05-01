@@ -5,4 +5,4 @@ from knapsack import KnapsackInstance, KnapsackSolver
 class BruteforceKnapsackSolver(KnapsackSolver):
     
     def solve(self):
-        
+        ...
